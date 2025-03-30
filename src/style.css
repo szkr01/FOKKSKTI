@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  touch-action: none;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden; /* 重要: ビューポートのスクロールを禁止 */
+  font-family: sans-serif;
+  /* iOSでのオーバースクロール（バウンス）を抑制する試み (オプション) */
+  /* position: fixed; */ /* 副作用が大きい可能性あり */
+  /* width: 100%; */
+}
+
+#app {
+  height: 100%;
+  /* #app レベルでの overflow は App.vue で管理 */
+}
